@@ -1,15 +1,11 @@
 function CreateTrailer(spawn)
     local objects = {}
-
     local POIOffsets = {}
     POIOffsets.exit = json.decode('{"z":2.5,"y":-2.0157,"x":-0.62,"h":2.2633972168}')
-
     local shell = CreateObject(`trailershell`, spawn.x, spawn.y, spawn.z, false, false, false)
     FreezeEntityPosition(shell, true)
     table.insert(objects, shell)
-
 	-- props --
-
 		-- bed --
 		local bedTIDY = CreateObject(`V_26_BedTIDY`,spawn.x + -4.30269842,spawn.y + -0.00506639,spawn.z + 1.85076500,false,false,false)
 		FreezeEntityPosition(bedTIDY, true)
@@ -53,7 +49,6 @@ function CreateTrailer(spawn)
 		FreezeEntityPosition(toilet, true)
 		table.insert(objects, toilet)
 
-
 		-- hall -- 
 		local hall = CreateObject(`v_26_halloverlaytidy`,spawn.x + -1.33, spawn.y + -0.62,spawn.z + 1.8155,false,false,false)
 		FreezeEntityPosition(hall, true)
@@ -63,7 +58,6 @@ function CreateTrailer(spawn)
 		local wardrobe = CreateObject(`v_26_wardrobetidy`,spawn.x + -5.5, spawn.y + -1.625,spawn.z + 1.8155,false,false,false)
 		FreezeEntityPosition(wardrobe, true)
 		table.insert(objects, wardrobe)
-
 
 		-- DINING TABLE -- 
 		local dining = CreateObject(`v_26_couchtidy`,spawn.x + 3.3850269842,spawn.y + 0.0 ,spawn.z + 1.83155,false,false,false)
