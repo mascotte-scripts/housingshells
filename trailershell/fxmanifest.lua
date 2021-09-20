@@ -4,4 +4,4 @@ author 'Mascotte'
 description 'Trailer Shell'
 version '1.0.0'
 
-data_file 'DLC_ITYP_REQUEST' 'stream/trailershell/trailershell.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/trailershell.ytyp'
