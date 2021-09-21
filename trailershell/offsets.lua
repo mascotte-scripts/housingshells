@@ -1,7 +1,9 @@
+-- Client Side
+-- Below function is an example of how I'm spawning the shell and loading the furnished objects
 function CreateTrailer(spawn)
     local objects = {}
     local POIOffsets = {}
-    POIOffsets.exit = json.decode('{"z":2.5,"y":-2.0157,"x":-0.62,"h":2.2633972168}')
+    POIOffsets.exit = json.decode('{"z":2.5,"y":-2.0157,"x":-0.62,"h":2.2633972168}') -- Where you will spawn inside the shell
     local shell = CreateObject(`trailershell`, spawn.x, spawn.y, spawn.z, false, false, false)
     FreezeEntityPosition(shell, true)
     table.insert(objects, shell)
